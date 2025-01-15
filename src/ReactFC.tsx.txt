@@ -1,0 +1,16 @@
+FuncionA
+El tipado de funcion tiene dos opciones iguales
+React.FunctionComponent = React.FC
+
+El tipado del retorno, que es un elemento de JSX, en este caso es un elemento de HTML,
+Se limita con:
+_React.ReactElement que no permite null, string, number. Ningun elemento que no sea HTML.
+
+si el retorno se tipa con:
+_React.ReactNode permite null y cualquier otro tipo de dato que no sea ELEMENTO HTML
+--------------------------------------------------
+
+FuncionB
+tipado de props
+Se define un GENÉRICO <> con un objeto dentro <{}> que hace referencia a la props ({}) recibida
+
