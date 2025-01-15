@@ -1,0 +1,5 @@
+_EL archivo vite-env.d.ts
+_ES para definir tipos y proporcionar información del entorno al proyecto; en este caso, guardar variables de entorno.
+_Facilita el desarrollo --> ofrece autocompletado
+                        --> verifica los tipos para las variables específicas de typescript
+                        (por eso definir todos los tipos para facilitar el trabajo)
