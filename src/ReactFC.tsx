@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Children } from "react";
 
 // // Función A
 // // el tipado de funcion React.FC
@@ -15,11 +15,13 @@ import React from "react";
 
 // Función B
 // tipado de props. Se define un GENÉRICO <> con un objeto que hace referencia a la props recibida
-export const Saludador: React.FC<{name: string}> = ({ name }): React.ReactElement => {
+// Se declara el componente HIJO dentro del genérico
+export const Saludador: React.FC<{children: React.ReactElement, name: string}> = ({ name, children }): React.ReactElement => {
     return (
-        <h1>
-            ¡Hola, {name}!
-        </h1>
+        <>
+            <h1>¡Hola, {name}! </h1>
+            {children}
+        </>
     )
 }
 

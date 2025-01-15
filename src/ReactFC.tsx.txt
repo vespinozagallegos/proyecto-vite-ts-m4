@@ -12,5 +12,10 @@ _React.ReactNode permite null y cualquier otro tipo de dato que no sea ELEMENTO 
 
 FuncionB
 tipado de props
-Se define un GENÉRICO <> con un objeto dentro <{}> que hace referencia a la props ({}) recibida
+_Se define un GENÉRICO <> con un objeto dentro <{}> que hace referencia a la props ({}) recibida
+_Si quiero renderizar en App un componente hijo, se debe declarar en ReactFC
+    _dentro del GENÉRICO como <{children: React.ReactElement / React.ReactNode}
+    _dentro de props se desestructura como ({children})
+    _en el retorno se renderiza como {children}
+
 
