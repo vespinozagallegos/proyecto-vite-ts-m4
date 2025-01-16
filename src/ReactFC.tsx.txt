@@ -18,4 +18,9 @@ _Si quiero renderizar en App un componente hijo, se debe declarar en ReactFC
     _dentro de props se desestructura como ({children})
     _en el retorno se renderiza como {children}
 
+SI HAY MUCHAS PROPS el tipado de props se vuelve engorroso
+POR LO TANTO ------> INTERFACES
+    _Se crea la interfaz IProductProps
+    _se asigna dentro del GENÉRICO <IProductProps>
+
 

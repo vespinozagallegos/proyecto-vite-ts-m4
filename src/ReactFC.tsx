@@ -1,4 +1,4 @@
-import React, { Children } from "react";
+import React from "react";
 
 // // Función A
 // // el tipado de funcion React.FC
