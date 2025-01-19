@@ -1,0 +1,26 @@
+import React from "react";
+
+// Se declarar la interfaz y se TIPA lo que recibe <Item>
+interface IItemListProps<Item> {
+    // prop items = Array de Item
+    items: Item[];
+    // se declara una función que renderiza los elementos a recibir
+    renderCallback: (item: Item) => React.ReactNode;
+}
+------------------------------------------------------------------------------------
+
+//? DECLARACIÓN 2 EJEMPLO de como llamar las props 1 por 1 SI NO SE OCUPARA map
+// Se declara la función exportada (export function ItemList)
+// Se declara el tipo de dato que recibe <Item>
+// Se declara el argumento en los params ()
+
+export function ItemList<Item>(props: IItemListProps<Item>) {
+    return (
+        <>
+            <ul>
+                {props.items}
+                {props.renderCallback}
+            </ul>
+        </>
+    );
+}
