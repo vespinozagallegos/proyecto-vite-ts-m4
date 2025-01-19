@@ -4,13 +4,18 @@ interface IProductProps {
     title: string;
     description: string;
     price: number;
-    images: string[];
-    active: boolean
+    images?: string[];
+    active?: boolean
 
 }
 
-export const Product: React.FC<IProductProps> = ({ title, description, price, images, active }) => {
+export const Product: React.FC<IProductProps> = ({ title, description, price }) => {
     return (
+        <>
+            <p>{title}</p>
+            <p>{description}</p>
+            <p>{price}</p>
+        </>
 
     );
 }

@@ -1,12 +1,16 @@
 FuncionA
-El tipado de funcion tiene dos opciones iguales
+FUNCION
+El tipado de funcion como COMPONENTE FUNCIONAL tiene dos SINTAXIS con igual resultado:
 React.FunctionComponent = React.FC
 
+RETORNO
 El tipado del retorno, que es un elemento de JSX, en este caso es un elemento de HTML,
+
 Se limita con:
+
 _React.ReactElement que no permite null, string, number. Ningun elemento que no sea HTML.
 
-si el retorno se tipa con:
+ si el retorno se tipa con:
 _React.ReactNode permite null y cualquier otro tipo de dato que no sea ELEMENTO HTML
 --------------------------------------------------
 
@@ -18,9 +22,21 @@ _Si quiero renderizar en App un componente hijo, se debe declarar en ReactFC
     _dentro de props se desestructura como ({children})
     _en el retorno se renderiza como {children}
 
+RENDERIZDAO EN APP------> IR A APP y VER LOS COMENTARIOS
+
 SI HAY MUCHAS PROPS el tipado de props se vuelve engorroso
 POR LO TANTO ------> INTERFACES
     _Se crea la interfaz IProductProps
-    _se asigna dentro del GENÉRICO <IProductProps>
-
+    _En el COMPONENTE FUNCIONAL Product
+    _se asigna dentro del GENÉRICO <IProductProps> Así: (ver archivo Products.tsx)
+        export const Product: React.FC<IProductProps> =
+    _Se desestructura del otro lado de la igualdad. Así: (ver archivo Products.tsx) 
+        = ({ title, description, price, images, active }) => 
+    
+    _Para evitar errores, como no ocupar todas las props declaradas en la Interfaz IProductProps (las dos últimas)
+        _Se declaran opcionales en la INTERFAZ
+            images?: string[];
+            active?: boolean
+        _No se declaran en las props del COMPONENTE FUNCIONAL
+        _Finalmente en App 
 
