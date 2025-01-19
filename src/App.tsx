@@ -2,6 +2,7 @@ import './App.css'
 // import Saludador from './ReactFC'
 // import Product from './Product'
 import ListUseExample from './components/ListUseExample/ListUseExample'
+import UserList from './INTERFACES en COMUNICACIONES HTTP/UserList/UserList'
 
 function App() {
 
@@ -21,6 +22,7 @@ function App() {
 
       {/* <Product title='Producto1' description='Descripción del Producto1' price={100} /> */}
       <ListUseExample/>
+      <UserList/>
     </>
   )
 }
