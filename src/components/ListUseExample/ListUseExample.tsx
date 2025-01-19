@@ -22,6 +22,7 @@ const orders: IOrder[] = [
 
 // Función que renderiza los objetos
 // recibe por parametro al objeto order basado en la Interfaz
+// Renderiza cada orden y pone como lista LOS ELEMENTOS de la ORDEN
 const orderRenderer = (order: IOrder) => {
     return (
         // renderizaciones
@@ -41,7 +42,7 @@ const orderRenderer = (order: IOrder) => {
 export const ListUseExample: React.FC = () => {
     return (
         <>
-            
+
         </>
     );
 }
