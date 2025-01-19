@@ -1,0 +1,12 @@
+Dentro de COMPONENTS se crea UNA carpeta por c/COMPONENTE
+    _Puede seguir el mismo nombre como ItemList
+    _Puede ser todo con minuscula separa con guiones ---> item-nombre
+
+Si quisieramos darle estilos
+    _Se crea el ARCHIVO DE ESTILOS dentro de la carpeta creada---> ItemList
+
+Si modularizaramos la lógica tendríamos:
+    _Componente container por un lado
+    _Componente view por otro
+
+Al archivo ItemList.tsx se le LLAMA Principio SOLID

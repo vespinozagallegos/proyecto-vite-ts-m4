@@ -1,5 +1,5 @@
 // vendors
-import React from "react";
+// import React from "react";
 
 // types
 import { IItemListProps } from "./types";
