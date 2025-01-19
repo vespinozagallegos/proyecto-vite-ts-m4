@@ -1,6 +1,7 @@
 import './App.css'
-import Saludador from './ReactFC'
-import Product from './Product'
+// import Saludador from './ReactFC'
+// import Product from './Product'
+import ListUseExample from './components/ListUseExample/ListUseExample'
 
 function App() {
 
@@ -12,14 +13,14 @@ function App() {
 
     // <Product name="Víctor"/>               ----> componente sin children.
     <>
-      <Saludador name="Víctor">
+      {/* <Saludador name="Víctor">
         <p>
           Aquí iría el componente hijo
         </p>
-      </Saludador>
+      </Saludador> */}
 
-      <Product title='Producto1' description='Descripción del Producto1' price={100} />
-      
+      {/* <Product title='Producto1' description='Descripción del Producto1' price={100} /> */}
+      <ListUseExample/>
     </>
   )
 }
