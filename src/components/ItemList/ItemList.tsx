@@ -15,7 +15,7 @@ export function ItemList<Item>( {items, renderCallback}: IItemListProps<Item> ) 
     return (
         // en la etiqueta ul se mapean las props
         // recorre cada item y requiere su index
-        // retornando una lista donde cada elemento se retona con si index como key
+        //* retornando una lista donde cada elemento se retona con si index como key
         // ¿Como se renderiza el elemento? le damos la renderCallback con su elemento item dentro
         <>
             <ul>

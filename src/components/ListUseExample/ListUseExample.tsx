@@ -1,3 +1,5 @@
+import ItemList from "../ItemList/ItemList";
+
 // Interfaz
 interface IOrder {
     id: string;
@@ -41,8 +43,9 @@ const orderRenderer = (order: IOrder) => {
 // Componente Funcional
 export const ListUseExample: React.FC = () => {
     return (
+        // Se llama ItemList (f GENÉRICA) OPCIONAL tipar ItemList<IOrder>
         <>
-
+            <ItemList items={orders} renderCallback={orderRenderer} />
         </>
     );
 }
