@@ -1,0 +1,8 @@
+const orders(ARRAY) y const orderRenders(FUNCION) 
+    _No son types ni componentes
+    _Por lo tanto van a utils.ts
+        _indica que contiene utilidades especificas del componente en carpeta
+        _Si fuese utilidades para el proyecto en general van a otra altura de carpeta general
+
+En la FUNCIÓN se retornan etiquetas HTML y genera error cuando 
+    _el archivo es utils.ts ------(CAMBIAR A)------> utils.tsx 
