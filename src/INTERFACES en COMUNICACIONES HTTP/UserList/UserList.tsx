@@ -38,5 +38,7 @@ const UserList: React.FC = () => {
         </div>
     );
 };
-
+// Hubo un error con el npm run dev luego de instalar las dependencias de axios y dev dependence de axios con types
+// Se solucionó eliminado las dependencias en cache que contiene la carpeta .vite (corrompidas)
+// con el comando rm -rf node_modules/.vite
 export default UserList;
